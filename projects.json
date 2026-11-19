@@ -1,0 +1,522 @@
+[
+ {
+  "id": "veedhi",
+  "name": "VEEDHI",
+  "category": "Infrastructure AI",
+  "status": "Working prototype",
+  "tagline": "Turning road journeys into structured infrastructure intelligence.",
+  "summary": "An AI-powered infrastructure intelligence platform connecting vehicle-based sensing, computer vision and geospatial processing to build a continuously updated view of road networks.",
+  "image": "img/veedhi-card.jpg",
+  "cover": "img/veedhi-cover.jpg",
+  "overview": "VEEDHI transforms road inspection from fragmented footage and manual observations into a data pipeline. A journey becomes structured evidence: road-damage detections, geographic coordinates and map-based views that can support infrastructure monitoring and maintenance workflows.",
+  "features": [
+   "Road journey video and GPS capture",
+   "Frame extraction and YOLO-based road-damage detection",
+   "GPS association and geospatial processing",
+   "Spatial data storage and map-oriented visualisation",
+   "A product roadmap toward road-network digital twins"
+  ],
+  "flow": [
+   "Capture video + GPS",
+   "Upload and extract frames",
+   "YOLO inference",
+   "Geospatial enrichment",
+   "Dashboard / map"
+  ],
+  "stack": [
+   "Flutter / Android",
+   "Python \u00b7 FastAPI",
+   "YOLOv12 \u00b7 PyTorch",
+   "PostgreSQL \u00b7 PostGIS",
+   "MinIO \u00b7 React \u00b7 TypeScript",
+   "SQLAlchemy \u00b7 Alembic \u00b7 JWT"
+  ],
+  "architecture": "The system separates field capture, inference, geospatial persistence and visualisation. Media objects are stored independently from structured detection metadata; PostGIS provides the spatial layer for location-aware querying and mapping.",
+  "links": [
+   [
+    "VEEDHI website",
+    "https://veedhi.online/"
+   ]
+  ],
+  "metrics": [
+   [
+    "SYSTEM",
+    "Capture \u2192 inference \u2192 spatial data"
+   ],
+   [
+    "CORE",
+    "Computer vision + geospatial AI"
+   ]
+  ]
+ },
+ {
+  "id": "genobotic",
+  "name": "GENOBOTIC / ROTO BOT",
+  "category": "Biomedical AI",
+  "status": "Working prototype",
+  "tagline": "Microfluidics, microbiology and machine vision for antimicrobial resistance workflows.",
+  "summary": "A point-of-care diagnostics initiative focused on rapid antimicrobial-resistance detection and antibiotic-susceptibility assessment.",
+  "image": "img/genobotic-card.jpg",
+  "overview": "Genobotic combines microfluidics, microbiology, computer vision and AI/ML into a compact diagnostic workflow. The product work spans assay development, experimental design, image acquisition, dataset generation, model development and technology translation.",
+  "features": [
+   "Microfluidic diagnostic workflow development",
+   "Antimicrobial susceptibility and resistance assessment",
+   "Computer-vision approaches for culture-plate analysis",
+   "Dataset generation, model training and performance analysis",
+   "Integration of assay outputs with software interpretation"
+  ],
+  "flow": [
+   "Sample / assay",
+   "Microfluidic workflow",
+   "Image or optical readout",
+   "Computer-vision analysis",
+   "Diagnostic interpretation"
+  ],
+  "stack": [
+   "Microfluidics \u00b7 microbiology",
+   "Python \u00b7 image processing",
+   "Computer vision \u00b7 YOLO / PyTorch",
+   "Experimental design \u00b7 model validation"
+  ],
+  "architecture": "The engineering challenge is cross-domain integration: experimental assay design and biological readouts must connect to robust image acquisition, model inference and interpretable software outputs. Prototype development and clinical validation are distinct stages.",
+  "links": [],
+  "metrics": [
+   [
+    "FUNDING",
+    "\u20b94 lakh TIDE 2.0 + \u20b910 lakh CSR"
+   ],
+   [
+    "RECOGNITION",
+    "Top 5 innovation \u00b7 CCAMP / CARB-X"
+   ]
+  ]
+ },
+ {
+  "id": "recollia",
+  "name": "RECOLLIA / IMAGE ENGINE",
+  "category": "Medical AI",
+  "status": "Working prototype",
+  "tagline": "A structured image engine for medical visual content.",
+  "summary": "An AI-assisted workflow for creating and reviewing medical visual assets, with a concrete anatomical schematic prototype.",
+  "image": "img/recollia-card.jpg",
+  "overview": "The Recollia image-engine work focuses on producing medical visuals that are useful, consistent and reviewable. The current work includes a hernia / inguinal-canal anatomical schematic prototype and an evolving workflow for planning, generating and validating medical figures.",
+  "features": [
+   "Medical figure planning from structured topics",
+   "Anatomical visual generation and refinement",
+   "Image review and visual quality checks",
+   "Provenance and content-to-asset association",
+   "Human review as part of the asset lifecycle"
+  ],
+  "flow": [
+   "Topic + evidence",
+   "Figure specification",
+   "Visual generation",
+   "Vision / quality review",
+   "Approved asset"
+  ],
+  "stack": [
+   "Image-generation workflows",
+   "Vision-model review",
+   "Structured content pipelines",
+   "Medical illustration and anatomy references"
+  ],
+  "architecture": "The image engine is treated as a workflow rather than a single generation call. A figure moves through specification, generation, visual inspection and approval; the wider multi-stage orchestration continues to evolve.",
+  "links": [],
+  "metrics": [
+   [
+    "DOMAIN",
+    "Medical education"
+   ],
+   [
+    "FOCUS",
+    "Generation + quality workflows"
+   ]
+  ]
+ },
+ {
+  "id": "revoice",
+  "name": "REVOICE / PROJECT SPEECH",
+  "category": "Audio AI",
+  "status": "Architecture / prototype",
+  "tagline": "Electrolarynx speech in. Natural voice out.",
+  "summary": "A web experience that turns electrolarynx speech into a natural voice note, ready to share through familiar messaging channels.",
+  "image": "img/revoice-card.jpg",
+  "overview": "ReVoice explores an accessible speech-restoration workflow. A user records audio in the browser or uploads a clip; the system denoises and transcribes the input, converts it using a personal voice index, and prepares the resulting voice note for sharing or download.",
+  "features": [
+   "Browser microphone recording and audio upload",
+   "Device-buzz reduction using noisereduce",
+   "Speech transcription using faster-whisper",
+   "Voice conversion using RVC and a personal voice index",
+   "Download and phone share-sheet workflow",
+   "Restore and voice-enrolment modes in the application"
+  ],
+  "flow": [
+   "Record",
+   "Denoise",
+   "Transcribe",
+   "Convert",
+   "Share"
+  ],
+  "stack": [
+   "Frontend: HTML \u00b7 CSS \u00b7 JavaScript \u00b7 MediaRecorder \u00b7 Web Audio \u00b7 Web Share API",
+   "Mobile: Flutter (Android)",
+   "Backend: Python 3.10 \u00b7 FastAPI \u00b7 SQLAlchemy \u00b7 SQLite",
+   "Auth / jobs: JWT \u00b7 bcrypt \u00b7 background job queue",
+   "AI: PyTorch CPU \u00b7 RVC \u00b7 HuBERT \u00b7 RMVPE \u00b7 FAISS",
+   "Audio: faster-whisper \u00b7 ffmpeg",
+   "Deployment: Docker Compose \u00b7 Caddy \u00b7 HTTPS \u00b7 cloud VM"
+  ],
+  "architecture": "The application separates browser/mobile capture from backend processing. Audio jobs move through denoising, transcription and voice conversion before the output is passed to the device sharing workflow. Restore and voice enrolment currently take approximately 1\u20132 minutes per clip on CPU. Planned extensions include live Indic captions, a Telegram bot and Gmail sending.",
+  "links": [
+   [
+    "Open ReVoice application",
+    "files/revoice-open-revoice-application.html"
+   ],
+   [
+    "View project architecture",
+    "img/revoice-card.jpg"
+   ]
+  ],
+  "metrics": [
+   [
+    "PROCESSING",
+    "~1\u20132 min / clip on CPU"
+   ],
+   [
+    "NEXT",
+    "Live Indic captions \u00b7 messaging integrations"
+   ]
+  ]
+ },
+ {
+  "id": "athleticos",
+  "name": "ATHLETICOS",
+  "category": "Product engineering",
+  "status": "Working prototype",
+  "tagline": "A digital assessment journey for discovering sporting potential.",
+  "summary": "A sports-assessment application connecting student registration, physical parameters and movement assessment with sport-suitability insights.",
+  "image": "img/athleticos-card.svg",
+  "overview": "Athleticos presents a multi-step product journey for student assessment: profile creation, physical measurements, camera-based movement assessment, benchmark normalisation and sport-suitability reporting.",
+  "features": [
+   "Student registration and profiles",
+   "Assessment across 17 physical parameters",
+   "Camera-based movement assessment",
+   "Benchmark normalisation",
+   "Suitability mapping across 15 sports",
+   "Ranked sport recommendations and training insights"
+  ],
+  "flow": [
+   "Register student",
+   "Capture parameters",
+   "Assess movement",
+   "Normalise benchmarks",
+   "Generate sport-fit report"
+  ],
+  "stack": [
+   "Lovable-assisted application prototype",
+   "Browser-based user experience",
+   "Underlying implementation stack can be expanded from the source project"
+  ],
+  "architecture": "The product is organised around a guided assessment workflow. It connects structured student data with movement observations and a report-oriented output.",
+  "links": [
+   [
+    "Open Athleticos demo",
+    "https://athleticosdemo.lovable.app"
+   ]
+  ],
+  "metrics": [
+   [
+    "ASSESSMENT",
+    "17 physical parameters"
+   ],
+   [
+    "SPORTS",
+    "15 sport categories"
+   ]
+  ]
+ },
+ {
+  "id": "vc-matching",
+  "name": "VC FOUNDER MATCHING",
+  "category": "Data intelligence",
+  "status": "Architecture / prototype",
+  "tagline": "Connecting founder discovery to relationship intelligence.",
+  "summary": "An investment-intelligence workflow mapping founders' professional connections into the Indian VC ecosystem to surface relevant investor relationships and potential warm introductions.",
+  "image": "img/vc-matching-card.svg",
+  "overview": "The pipeline explores how structured founder and startup research can be enriched with professional-network context. Rather than treating sourcing as a flat list, it maps relationships between founders, people and investor organisations to support discovery and outreach.",
+  "features": [
+   "Founder and startup discovery",
+   "Research and information extraction",
+   "LinkedIn-network relationship mapping",
+   "Investor and VC ecosystem context",
+   "Potential warm-introduction path discovery"
+  ],
+  "flow": [
+   "Discover founders",
+   "Extract entities",
+   "Map connections",
+   "Resolve VC context",
+   "Surface warm paths"
+  ],
+  "stack": [
+   "LLM-assisted research workflows",
+   "Data extraction and normalisation",
+   "Entity resolution",
+   "Relationship / network mapping"
+  ],
+  "architecture": "The system is modelled as a research and relationship pipeline: source information is extracted into entities, linked through professional connections and contextualised against the VC ecosystem. The current work is at architecture / prototype stage.",
+  "links": [],
+  "metrics": [
+   [
+    "SOURCING CONTEXT",
+    "1,000+ startups evaluated"
+   ],
+   [
+    "INVESTMENT WORK",
+    "Campus Fund deal-team experience"
+   ]
+  ]
+ },
+ {
+  "id": "nammude-genome",
+  "name": "NAMMUDE GENOME",
+  "category": "Scientific applications",
+  "status": "Working application",
+  "tagline": "A software application in the genomics domain.",
+  "summary": "A working genomics application developed to make a domain-specific scientific workflow accessible through software.",
+  "image": "img/nammude-genome-card.svg",
+  "overview": "Nammude Genome is part of a broader body of work translating biological and genomic subject matter into digital products. The portfolio presents it as a working application, with its detailed user journey and feature set represented by the live product interface.",
+  "features": [
+   "Genomics-focused application experience",
+   "Scientific information presented through a digital workflow",
+   "User-facing application rather than a static research document"
+  ],
+  "flow": [
+   "Application entry",
+   "Genomics workflow",
+   "Data / information view",
+   "User-facing output"
+  ],
+  "stack": [
+   "Application implementation details are available in the working product."
+  ],
+  "architecture": "The application sits at the intersection of biological domain knowledge and software product design.",
+  "links": [],
+  "metrics": [
+   [
+    "STATUS",
+    "Working application"
+   ],
+   [
+    "DOMAIN",
+    "Genomics"
+   ]
+  ]
+ },
+ {
+  "id": "otta-garages",
+  "name": "OTTA GARAGES",
+  "category": "Product engineering",
+  "status": "Week-1 launch build",
+  "tagline": "Book car service, repairs and on-road help from a local garage, with pickup and drop.",
+  "summary": "A car-service marketplace where customers book service, repair and on-road help, and service centres and their drivers handle the job.",
+  "image": "img/jack-ott-card.svg",
+  "overview": "Otta is a car-service marketplace. Car owners find a garage on the public website or in the Flutter app, see prices upfront and request a booking. The service centre sends an estimate, the customer approves it, and a driver can collect the car and bring it back, with every step visible. The repository holds the week-1 launch version: customer app, public website, partner dashboard and Firebase backend.",
+  "features": [
+   "Customer app for Android and iPhone (Flutter) with phone-OTP login",
+   "Public website with garage listings by city, number-plate lookup, garage pages (photos, video tour, price list, reviews) and web booking",
+   "Partner dashboard for service-centre staff and drivers, including price editing",
+   "Estimate approval before any work starts; in week 1 customers pay at the centre by cash or UPI",
+   "Firebase backend: security rules, push notifications, account deletion, and reviews created when a delivered order is rated"
+  ],
+  "flow": [
+   "Requested",
+   "Accepted, estimate sent",
+   "Driver assigned",
+   "Picked up",
+   "In service",
+   "Ready",
+   "Out for delivery",
+   "Delivered"
+  ],
+  "stack": [
+   "Flutter (Android, iPhone)",
+   "Plain JavaScript, no build step",
+   "Firebase: Auth, Firestore (Mumbai), Cloud Functions, Hosting",
+   "Node.js 22 admin scripts",
+   "Licensed RC-verification API for plate lookup"
+  ],
+  "architecture": "The customer app, public website and partner dashboard share one Firebase project. Website bookings are written to the same orders collection as the app, tagged as coming from the website. Cloud Functions handle push notifications, account deletion, vehicle lookup and review creation. Self drop-off skips the driver steps. Until the Firebase config is added, the website runs in a demo mode on sample garages.",
+  "links": [
+   [
+    "Market research and launch plan",
+    "https://claude.ai/artifact/HYnVRuSQQ3hrpeLENuTDA8"
+   ],
+   [
+    "Interface prototype",
+    "https://claude.ai/artifact/7qwWn5u5xAj4MM4ZfSAin8"
+   ]
+  ],
+  "metrics": [
+   [
+    "LAUNCH CITIES",
+    "Kolkata, Kharagpur (listing draft)"
+   ],
+   [
+    "ORDER FLOW",
+    "8 steps, 5 with self drop-off"
+   ],
+   [
+    "PAYMENT",
+    "Cash or UPI at the centre"
+   ],
+   [
+    "NEXT",
+    "Razorpay, driver and merchant apps, live driver map, admin panel"
+   ]
+  ]
+ },
+ {
+  "id": "agar",
+  "name": "AGAR / MICROBIAL COLONY DETECTION",
+  "category": "Computer vision",
+  "status": "Research poster",
+  "tagline": "Detecting five bacterial species on petri dishes with YOLOv8.",
+  "summary": "A computer-vision workflow that detects and classifies bacterial colonies in petri dish images, presented as a research poster on pathogen detection for antimicrobial resistance.",
+  "image": "img/agar-card.svg",
+  "overview": "AGAR is a computer-vision project for microbial plate imagery. A YOLOv8n detector was trained on 6,500 petri dish images from the public AGAR dataset to detect and classify five species: E. coli, C. albicans, P. aeruginosa, B. subtilis and S. aureus. The work is presented as the poster \"CNN based detection of pathogens to tackle antimicrobial resistance\".",
+  "features": [
+   "6,500 petri dish images selected from the public AGAR dataset",
+   "Detection and classification of five species",
+   "YOLOv8n trained for 20 epochs with Ultralytics",
+   "Evaluation with precision, recall, mAP50, mAP50-95, confusion matrices and precision-recall curves",
+   "Next step: training on a dataset specific to resistant pathogens"
+  ],
+  "flow": [
+   "Plate image",
+   "Dataset preparation",
+   "Model training",
+   "Inference",
+   "Detected colonies"
+  ],
+  "stack": [
+   "Python \u00b7 Ultralytics",
+   "YOLOv8n \u00b7 PyTorch",
+   "AGAR microbial colony dataset",
+   "NVIDIA RTX 4060 (8 GB) \u00b7 Windows 11"
+  ],
+  "architecture": "The workflow connects labelled plate images to model training and inference. The poster notes that the lower mAP50-95 leaves room to improve, and names resistant-pathogen data and validation in real hospital settings as the next steps.",
+  "links": [],
+  "metrics": [
+   [
+    "PRECISION / RECALL",
+    "0.93 / 0.87"
+   ],
+   [
+    "mAP50 / mAP50-95",
+    "0.92 / 0.63"
+   ],
+   [
+    "DATA",
+    "6,500 images, 5 species"
+   ],
+   [
+    "TRAINING",
+    "YOLOv8n, 20 epochs"
+   ]
+  ],
+  "poster": {
+   "image": "img/agar-poster.jpg",
+   "pdf": "files/agar-amr-poster.pdf",
+   "title": "CNN based detection of pathogens to tackle antimicrobial resistance",
+   "authors": "Pranoy M S, Vinay Bhaskar, Abhishekh Jangid, Anurag Chandrakar, Sriram Bharath",
+   "points": [
+    "Model: YOLOv8n trained for 20 epochs on 6,500 AGAR plate images",
+    "Validation: precision 0.93, recall 0.87, mAP50 0.92, mAP50-95 0.63",
+    "Species: E. coli, C. albicans, P. aeruginosa, B. subtilis, S. aureus",
+    "Next: train on resistant-pathogen data and validate in hospital settings"
+   ]
+  }
+ },
+ {
+  "id": "rorschach",
+  "name": "RORSCHACH GENERATOR",
+  "category": "Generative systems",
+  "status": "Working prototype",
+  "tagline": "Procedural generation of symmetrical inkblot forms.",
+  "summary": "A generative graphics experiment exploring controlled symmetry, procedural shapes and visual variation.",
+  "image": "img/rorschach-card.svg",
+  "overview": "The Rorschach Generator explores how symmetrical inkblot-like forms can be constructed digitally. Its focus is procedural image generation and visual control rather than clinical interpretation.",
+  "features": [
+   "Procedural shape generation",
+   "Symmetry-based composition",
+   "Visual variation and iteration",
+   "Generative image output"
+  ],
+  "flow": [
+   "Generate forms",
+   "Apply symmetry",
+   "Compose image",
+   "Render variation"
+  ],
+  "stack": [
+   "Procedural graphics",
+   "Generative image workflows"
+  ],
+  "architecture": "The generator is an experimental visual-computing prototype. It is not a clinically validated psychological instrument.",
+  "links": [],
+  "metrics": [
+   [
+    "DOMAIN",
+    "Generative graphics"
+   ],
+   [
+    "OUTPUT",
+    "Symmetrical visual forms"
+   ]
+  ]
+ },
+ {
+  "id": "hydroloop",
+  "name": "HYDROLOOP",
+  "category": "Research & materials",
+  "status": "Research concept",
+  "tagline": "A hierarchical bio-based hydrogel cartridge for textile wastewater treatment.",
+  "summary": "A research-led product concept combining bio-based hydrogel materials and modular treatment stages for textile wastewater.",
+  "image": "img/hydroloop-card.jpg",
+  "cover": "img/hydroloop-cover.jpg",
+  "overview": "HYDROLOOP explores a cartridge-based approach to textile wastewater treatment using a hierarchical bio-based hydrogel architecture. The concept connects adsorption, material reinforcement and enzyme immobilisation in a modular treatment design.",
+  "features": [
+   "Bio-based hydrogel cartridge concept",
+   "Hierarchical material architecture",
+   "Adsorption-oriented treatment stages",
+   "Enzyme immobilisation concept",
+   "Modular treatment and regeneration pathway"
+  ],
+  "flow": [
+   "Wastewater input",
+   "Adsorption stage",
+   "Hierarchical hydrogel",
+   "Enzyme-assisted stage",
+   "Treated effluent"
+  ],
+  "stack": [
+   "Chitosan \u00b7 alginate",
+   "Nanocellulose reinforcement",
+   "Enzyme immobilisation",
+   "Hydrogel material design"
+  ],
+  "architecture": "The concept is structured as a modular treatment cartridge in which material layers provide complementary functions. This is a research and product-design concept rather than a deployed software product.",
+  "links": [],
+  "metrics": [
+   [
+    "DOMAIN",
+    "Textile wastewater"
+   ],
+   [
+    "APPROACH",
+    "Bio-based hierarchical hydrogel"
+   ]
+  ]
+ }
+]
